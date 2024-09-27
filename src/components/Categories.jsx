@@ -2,9 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { data } from '../data'
 
 const Categories = ({selected, setSelected}) => {
-
     const [category, setCategory] = useState([])   
-    
 
     useEffect(() => {
         const uniqueCategories = [...new Set(data.map(item => item.category))]
